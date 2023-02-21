@@ -49,11 +49,12 @@ int main() {
     //get response from user
     string response;
     double insufficientServiceCharge;
-
+    
     cin >> response;
     if(amtToWithdraw > accountBalance) {
         cout << "Insufficient funds. You will be charged $25 to continue" << endl;
     }
+    cout << "Do you wish to continue?";
     if(response == "Y" || response == "y" || response == "Yes" || response == "yes") {
         insufficientServiceCharge = 25;
         }
